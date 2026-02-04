@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Prototype-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-> Hệ thống xử lý trung tâm cho thiết bị đeo tay thông minh (Smart Wristband), sử dụng thuật toán Random Forest để phát hiện té ngã với độ chính xác **>99%** và cảnh báo nguy cơ đột quỵ dựa trên phân tích trạng thái bất động sau ngã.
+> Hệ thống xử lý trung tâm cho thiết bị đeo tay thông minh (Smart Wristband), sử dụng thuật toán Random Forest để phát hiện té ngã với độ chính xác **>92%** và cảnh báo nguy cơ đột quỵ dựa trên phân tích trạng thái bất động sau ngã.
 
 ---
 
@@ -31,8 +31,9 @@ Dự án này là phần lõi AI (AI Backend) phục vụ cho hệ sinh thái **
     1.  **Fall Detection:** Phát hiện cú ngã (Accuracy 99.26%).
     2.  **Stroke Risk:** Đánh giá sự bất động sau ngã (Post-fall immobility).
 *   **Robustness:** Loại bỏ báo động giả từ các hành động mạnh (vỗ tay, đập bàn).
+*
+ ---
 
----
 
 ## 📂 Cấu trúc dự án
 
@@ -53,3 +54,20 @@ VieGrand-HAR/
 │
 ├── requirements.txt        
 └── README.md               
+
+---
+🛠 Cài đặt & Sử dụng
+1. Yêu cầu môi trường
+Python 3.8 trở lên
+Các thư viện: pandas, scikit-learn, fastapi, uvicorn...
+2. Cài đặt
+code
+Bash
+git clone https://github.com/your-username/viegrand-HAR.git
+cd viegrand-HAR
+pip install -r requirements.txt
+3. Chạy Server AI
+code
+Bash
+cd server
+python app.py
