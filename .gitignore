@@ -2,6 +2,10 @@
 __pycache__/
 *.py[codz]
 *$py.class
+__pycache__/
+*.ipynb_checkpoints
+.env
+venv/
 
 # C extensions
 *.so
