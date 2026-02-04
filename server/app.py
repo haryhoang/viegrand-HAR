@@ -9,7 +9,7 @@ import os
 
 
 # (Em lưu hàm extract_features_final_v2 vào file feature_extractor.py cùng thư mục)
-from feature_extractor import extract_features_final_v2
+from utils import extract_peak
 
 app = FastAPI(title="viegrand_HAR")
 
@@ -50,7 +50,7 @@ def predict_fall(data: SensorData):
             return {"error": "Not enough data. Need at least 1 second (50 samples)."}
 
         # Trích xuất đặc trưng (Feature Extraction)
-        features_df = extract_features_final_v2(df_raw, fs=50)
+        features_df = extract_peak(df_raw, fs=50)
 
         for col in feature_names:
             if col not in features_df.columns:
