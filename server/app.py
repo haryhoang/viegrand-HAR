@@ -7,8 +7,7 @@ import joblib
 import numpy as np
 import os
 
-
-# (Em lưu hàm extract_features_final_v2 vào file feature_extractor.py cùng thư mục)
+# Call extract_peak from utils.py
 from utils import extract_peak
 
 app = FastAPI(title="viegrand_HAR")
