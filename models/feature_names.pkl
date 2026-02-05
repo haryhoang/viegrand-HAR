@@ -1,1 +1,18 @@
 
+[ 
+  'impact_max',
+  'freefall_min',
+  'acc_range',
+  'acc_sma',
+  'jerk_max',
+  'jerk_min',
+  'acc_mean',
+  'acc_std',
+  'acc_kurtosis',
+  'acc_skewness',
+  'acc_post_std',
+  'gyro_max',
+  'gyro_mean',
+  'tilt_change'
+]
+  
